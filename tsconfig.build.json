@@ -1,0 +1,14 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"module": "esnext",
+		"rootDir": "src",
+		"outDir": "intermediate/jsm",
+		// to speed up it a little bit
+		// type check should be done during coding/testing/githooks
+		"skipLibCheck": true,
+		"composite": false
+	},
+	"include": ["src", "typings"],
+	"exclude": ["intermediate", "build", "dist", "**/node_modules", "**/.*/"]
+}
